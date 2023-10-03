@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>D&Đ Fashion Shop</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compitable" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="/src/images/fashionshoplogo.ico">
-        <link rel="stylesheet" href="/src/pages/css/forgotpw.css">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    </head>
-
-    <body>
-        <div class="navbar-fg">
+import React from "react";
+function ForgotPage(){
+    return(
+        <div className="forgotpage-contain">
+            <div class="navbar-fg">
             <nav>
                 <ul>
-                    <!--có link-->
+                    
                     <li><a href="">Home</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Posts</a></li>
@@ -23,7 +14,7 @@
                 </ul>
 
                 <ul>
-                    <!--có link-->
+                    
                     <li><a href=""><i class="bx bx-search"></i></a></li>
                     <li><a href=""><i class="bx bxs-user"></i></a></li>
                 </ul>
@@ -34,17 +25,20 @@
             <form action="">
                 <h1>Forgot Password</h1>
                 <div class="input-box-fg">
-                    <input id="email" type="email" placeholder="Email">
+                    <input id="email" type="email" placeholder="Email"/>
                     <i class="bx bx-envelope"></i>
                 </div>
 
                 <button type="submit" class="btn-fg">Continue</button>
 
                 <div class="register-link-fg">
-                    <!--có link file html register-->
-                    <p>Do not have an account?<a href="/src/pages/html/register.htm">Register</a></p> 
+                   
+                    <p>Do not have an account?<a>Register</a></p> 
                 </div>
             </form>
         </div>
-    </body>
-</html>
+        </div>
+    )
+}
+
+export default ForgotPage
